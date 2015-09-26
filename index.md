@@ -28,7 +28,7 @@ system as its discrimination threshold is varied.
 
 The TOC method is a novel modification of the ROC method 
 aimed to provide more bits of information than the ROC
-curve (<a href="https://www.researchgate.net/publication/267979928_Quantity_exchange_and_shift_components_of_difference_in_a_square_contingency_table">Pontius and Kangpin 2014</a>).
+curve (<a href="https://www.researchgate.net/publication/271800748_The_total_operating_characteristic_to_measure_diagnostic_ability_for_multiple_thresholds">Pontius and Kangpin 2014</a>).
 
 --- .class #id 
 
