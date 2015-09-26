@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The TOC Shiny App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="The TOC Shiny App">
+  <meta name="author" content="A. Santacruz">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>The TOC Shiny App</h1>
+    <h2>An Interactive Web Application for Producing the ROC Curve and the TOC Curve</h2>
+    <p>A. Santacruz<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Purpose of the TOC Shiny App</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The TOC R Shiny web application allows the construction 
+of the Receiver Operating Characteristic (ROC) curve and 
+the Total Operating Characteristic (TOC) curve for spatial 
+and non-spatial data through a graphical user interface.</p>
+
+<ul>
+<li><strong style="font-weight: bold">What is ROC?</strong></li>
+</ul>
+
+<p>The ROC curve is a widely-popular statistical technique 
+used for evaluating the performance of a binary classifier 
+system as its discrimination threshold is varied. </p>
+
+<ul>
+<li><strong style="font-weight: bold">What is TOC?</strong></li>
+</ul>
+
+<p>The TOC method is a novel modification of the ROC method 
+aimed to provide more bits of information than the ROC
+curve (<a href="https://www.researchgate.net/publication/267979928_Quantity_exchange_and_shift_components_of_difference_in_a_square_contingency_table">Pontius and Kangpin 2014</a>).</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>What are the applications of an ROC (or TOC) curve?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>ROC curves are used to evaluate the performance of diagnostic tests. For example, they have been used for:</p>
+
+<ul>
+<li>Determining a cutoff value for a clinical test in medicine (<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2698108/#">Park et al., 2004</a>).</li>
+<li>Assessing the performance of classification algorithms, such as those used for predicting structures and functions from sequence data (<a href="http://intl-bib.oxfordjournals.org/content/9/3/198.full">Sonego et al., 2008</a>).</li>
+<li>Examining the reliability of sensor-based estimates of of human interruptibility in office
+environments (<a href="https://homes.cs.washington.edu/~jfogarty/publications/gi2005.pdf">Fogarty et al., 2005</a>).</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How to use the TOC Shiny app?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Go to: <a href="https://amsantac.shinyapps.io/TOCapp">https://amsantac.shinyapps.io/TOCapp</a>.</li>
+<li>Download the sample data available in the &#39;How To&#39; tab in the &#39;Spatial&#39; menu for working with spatial data. Also see the &#39;Non-spatial&#39; menu for non-spatial data.</li>
+<li>Unzip the downloaded file and follow the instructions given in the &#39;How To&#39; tab.</li>
+<li>You will see the output curves, tables and maps in the &#39;Plots&#39;, &#39;Tables&#39; and &#39;Maps&#39; tabs.</li>
+</ol>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Recomendations</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>This app is under development. Results are not guaranteed.</li>
+<li>Use a small number of thresholds, e.g. 10. A greater number of thresholds may take longer time for processing. Parallelization will be implemented in the near future to improve performance.</li>
+<li>Plots, tables and maps display may take some seconds, so please be patient.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Purpose of the TOC Shiny App'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='What are the applications of an ROC (or TOC) curve?'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How to use the TOC Shiny app?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Recomendations'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
